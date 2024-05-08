@@ -44,8 +44,9 @@ V(G) = 16 - 10 + 2(1) = 6
 # Possiveis sequências
 
 Conexão bem-sucedida e verificação do usuário (Sucesso):
-* 1. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
-Conexão bem-sucedida e falha na verificação do usuário    
+* Conexão bem-sucedida e verificação do usuário (Sucesso):
+1. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
+   
 * 2. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 10
 * 3. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
 * 4. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
