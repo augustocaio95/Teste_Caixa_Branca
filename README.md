@@ -46,13 +46,21 @@ V(G) = 16 - 10 + 2(1) = 6
 Conexão bem-sucedida e verificação do usuário (Sucesso):
 * Conexão bem-sucedida e verificação do usuário (Sucesso):
 1. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
-   
-* 2. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 10
-* 3. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
-* 4. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
-* 5. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
-* 6. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 10
-* 7. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
-* 8. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 7 -> 10
-* 9. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
-* 10. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
+* Conexão bem-sucedida e falha na verificação do usuário:   
+2. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 10
+* Conexão bem-sucedida e falha na execução da consulta SQL  
+3. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
+* Conexão bem-sucedida, consulta SQL não executada e verificação do usuário  
+4. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
+* Conexão bem-sucedida, consulta SQL não executada e falha na verificação do usuário
+5. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
+* Conexão bem-sucedida, verificação do usuário e consulta SQL não executada  
+6. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 10
+* Conexão bem-sucedida, verificação do usuário e falha na execução da consulta SQL  
+7. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
+* Conexão bem-sucedida, consulta SQL não executada e falha na verificação do usuário  
+8. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 7 -> 10
+* Conexão bem-sucedida, consulta SQL não executada e verificação do usuário  
+9. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
+* Conexão bem-sucedida, consulta SQL não executada e verificação do usuário  
+10. 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
