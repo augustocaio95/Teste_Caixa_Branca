@@ -21,3 +21,35 @@ Exercício individual - Tema: Testes Caixa Branca
 # Outros erros identificados
 * O código não verifica se o usuário digitou a senha correta. Se a senha estiver incorreta, o código apenas informa que o usuário não foi encontrado, o que pode ser confuso para o usuário.
 * O código não valida as entradas do usuário (login e senha). Isso significa que o usuário pode digitar caracteres inválidos.
+
+
+# Grafo de Fluxo
+![fluxo](https://github.com/augustocaio95/Teste_Caixa_Branca/assets/124223509/14dbfc13-85e1-499a-b16b-4dc9743303ff)
+
+# Cálculo da complexidade ciclomática
+
+V(G) = complexidade ciclomática
+E = número de arestas no grafo
+N = número de nós no grafo
+P = número de componentes conexos (1 para um único grafo)
+
+V(G) = E - N + 2P
+
+Número de nós (N): 10 (Ponto de entrada, Pontos 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Número de arestas (E): 16 (cada ponto está conectado diretamente ao próximo ponto, exceto o ponto de entrada)
+Número de componentes conexos (P): 1 (pois o grafo é único e não possui componentes separados)
+
+V(G) = 16 - 10 + 2(1) = 6
+
+# Possiveis sequências
+
+* 1) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
+* 2) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 10
+* 3) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
+* 4) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
+* 5) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
+* 6) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 10
+* 7) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10
+* 8) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 7 -> 10
+* 9) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 9 -> 10
+* 10) 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 8 -> 10
